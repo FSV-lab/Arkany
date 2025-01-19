@@ -1,0 +1,74 @@
+/* Estilo para el menú de navegación */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor del logo y menú */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  /* Estilo del menú principal */
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Elementos del menú */
+  .menu-item {
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  /* Enlaces del menú */
+  .menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+  }
+  
+  /* Submenú */
+  .submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    display: none;
+  }
+  
+  /* Estilo para los elementos del submenú */
+  .submenu li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Mostrar el submenú al pasar el cursor sobre el menú principal */
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  /* Estilo al pasar el cursor sobre los enlaces */
+  .menu-item a:hover, .submenu li a:hover {
+    background-color: #555;
+  }
+  
